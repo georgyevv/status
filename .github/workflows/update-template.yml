@@ -16,8 +16,9 @@
 
 name: Update Template CI
 on:
-  schedule:
-    - cron: "0 0 * * *"
+  # Schedule removed: template self-update pushes workflow files, which requires a
+  # GH_PAT (github.token cannot push workflow changes). Dispatch manually if a PAT
+  # is ever added as the GH_PAT repo secret.
   repository_dispatch:
     types: [update_template]
   workflow_dispatch:
