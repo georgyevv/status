@@ -15,8 +15,28 @@ assignees:
 
 status-website:
   cname: status.whizcv.com
-  logoUrl: https://whizcv.com/favicon.ico
+  logoUrl: https://whizcv.com/assets/logo.svg
+  faviconSvg: https://whizcv.com/assets/logo.svg
   name: WhizCV Status
+  # WhizCV brand (slate palette from the logo). :root:root beats the theme
+  # stylesheet's :root regardless of load order. Status colors (up/down/degraded)
+  # are intentionally left at theme defaults — they're semantic.
+  customHeadHtml: |
+    <style>
+      :root:root {
+        --body-background-color: #f8fafc;
+        --body-text-color: #1e293b;
+        --nav-background-color: #ffffff;
+        --nav-border-bottom-color: #e2e8f0;
+        --nav-current-border-bottom-color: #1e293b;
+        --card-background-color: #ffffff;
+        --card-border-color: #e2e8f0;
+        --error-button-border-color: #0f172a;
+        --error-button-background-color: #1e293b;
+        --submit-button-border-color: #0f172a;
+        --submit-button-background-color: #1e293b;
+      }
+    </style>
   introTitle: "Live status of **WhizCV** — website, app, and API."
   introMessage: Uptime and response times are checked every 5 minutes from GitHub's infrastructure, independently of our own servers. If something is down, an incident appears below automatically.
   navbar:
