@@ -1,7 +1,7 @@
 url: https://whizcv-api.azurewebsites.net/healthz
 status: up
 code: 200
-responseTime: 394
-lastUpdated: 2026-11-22T02:53:35.037Z
+responseTime: 368
+lastUpdated: 2026-11-23T03:35:12.438Z
 startTime: 2026-08-01T11:43:50.706Z
 generator: Upptime <https://github.com/upptime/upptime>
